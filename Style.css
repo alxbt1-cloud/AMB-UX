@@ -35,6 +35,11 @@
             -webkit-text-fill-color: transparent;
         }
 
+        .logo :hover {
+            -webkit-text-fill-color: #ffffff36;
+            text-decoration: none;
+        }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -46,10 +51,11 @@
             color: #b0b0b0;
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 600;
         }
 
         .nav-links a:hover {
-            color: #667eea;
+            color: #7857c7;
         }
 
         .hero {
