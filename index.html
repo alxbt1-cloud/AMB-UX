@@ -8,10 +8,10 @@
 </head>
 <body>
     <nav class="nav"> 
-        <div class="logo"> <a href="#hero">Alexander Beattie</a></div>
+        <div class="logo"> <a href="#hero" onclick="handleNavClick(event, '#hero')">Alexander Beattie</a></div>
         <ul class="nav-links">
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
+             <li><a href="#work" onclick="handleNavClick(event, '#work')">Work</a></li>
+            <li><a href="#about" onclick="handleNavClick(event, '#about')">About</a></li>
         </ul>
     </nav>
 
@@ -155,8 +155,21 @@
                 <h2>Research & Discovery</h2>
                 <p>I conducted user interviews with 28 bettors about their promotional usage patterns, analyzed behavioral data from 85K+ user sessions, and reviewed support tickets related to promotions. I also performed usability testing on competitor apps to understand best practices for promotional discovery. Key insight: users wanted promotions presented at the right moment, not hidden in menus.</p>
                 <div class="project-image-grid">
-                    <div class="project-image-item">🔍</div>
-                    <div class="project-image-item">📊</div>
+                    
+                <div class="outcome-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">52%</div>
+                        <div class="stat-label">Increase in promotion usage</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">34%</div>
+                        <div class="stat-label">Higher bet placement on promoted events</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">-71%</div>
+                        <div class="stat-label">Reduction in promotion-related support tickets</div>
+                    </div>
+                </div>
                 </div>
             </div>
 
@@ -184,22 +197,38 @@
             <div class="project-section">
                 <h2>Results</h2>
                 <p>The promotional bottom sheet significantly improved user engagement and conversion:</p>
-                <div class="outcome-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">52%</div>
-                        <div class="stat-label">Increase in promotion usage</div>
+                <div class="project-image-grid">
+                    <div class="stat-group">
+                        <div class="ring-container">
+                            <div class="ring" style="--percentage: 252deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">70%</div>
+                        </div>
+                        <div class="stat-description">
+                            <h3>Promotion Usage Rate</h3>
+                            <p>70% of users who saw the bottom sheet applied at least one promotion, a 52% increase from previous rates.</p>
+                        </div>
+                    </div>   
+                    <div class="stat-group">
+                        <div class="ring-container">
+                            <div class="ring" style="--percentage: 54deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">15%</div>
+                        </div>
+                        <div class="stat-description">
+                            <h3>Promotion Usage Rate</h3>
+                            <p>70% of users who saw the bottom sheet applied at least one promotion, a 52% increase from previous rates.</p>
+                        </div>
+                    </div> <div class="stat-group">
+                        <div class="ring-container">
+                            <div class="ring" style="--percentage: 162deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">45%</div>
+                        </div>
+                        <div class="stat-description">
+                            <h3>Promotion Usage Rate</h3>
+                            <p>70% of users who saw the bottom sheet applied at least one promotion, a 52% increase from previous rates.</p>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">34%</div>
-                        <div class="stat-label">Higher bet placement on promoted events</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">-71%</div>
-                        <div class="stat-label">Reduction in promotion-related support tickets</div>
-                    </div>
-                </div>
             </div>
-
+            
             <div class="project-section">
                 <h2>Key Learnings</h2>
                 <p>This project reinforced the importance of contextual information delivery. By bringing promotions to users at the moment of decision-making rather than requiring them to search, we dramatically increased engagement. The bottom sheet pattern proved ideal for optional, supplementary information that enhances but doesn't interrupt the primary user journey.</p>
@@ -441,6 +470,31 @@
             document.getElementById(projectId).classList.add('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        function handleNavClick(e, target) {
+                    e.preventDefault();
+                    
+                    // Check if we're on a project page
+                    const isOnProjectPage = document.querySelector('.project-detail.active');
+                    
+                    if (isOnProjectPage) {
+                        // First, go back to main page
+                        hideProject();
+                        // Then scroll to target after a brief delay
+                        setTimeout(() => {
+                            document.querySelector(target).scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }, 100);
+                    } else {
+                        // Already on main page, just scroll
+                        document.querySelector(target).scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
 
         function hideProject(e) {
             if (e) e.preventDefault();
