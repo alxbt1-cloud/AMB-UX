@@ -188,6 +188,8 @@
             border-radius: 40px;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            position: relative;  
+            z-index: 1;
         }
 
         .project-map img {
@@ -199,6 +201,8 @@
             border-radius: 40px;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            position: relative;  
+            z-index: 1;
         }
 
         .project-card-1 img {
