@@ -175,6 +175,30 @@
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
+            position: relative;  
+            z-index: 1;
+        }
+
+        .project-map {
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            height: fit-content;
+            width: auto;
+            border-radius: 40px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-map img {
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            width: auto;
+            border-radius: 40px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
 
         .project-card-1 img {
@@ -193,6 +217,8 @@
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
+            position: relative;  
+            z-index: 1;
         }
 
         .project-card-2 img {
