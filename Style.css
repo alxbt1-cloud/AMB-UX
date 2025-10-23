@@ -169,7 +169,7 @@
             margin-top: 3rem;
         }
 
-        .project-card {
+        .project-card-1 {
             background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
             border-radius: 20px;
             overflow: hidden;
@@ -177,7 +177,7 @@
             cursor: pointer;
         }
 
-        .project-card img {
+        .project-card-1 img {
             width: 80%;
             height: auto;
             display: flex;
@@ -205,7 +205,7 @@
             margin-top: 80%;
         }
 
-        .project-card:hover {
+        .project-card-1:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
         }
@@ -230,7 +230,7 @@
             overflow: hidden;
         }
 
-        .project-image::before {
+        .project-image:before {
             content: '';
             position: absolute;
             top: 0;
@@ -241,7 +241,7 @@
             transition: left 0.5s;
         }
 
-        .project-card:hover .project-image::before {
+        .project-card-1:hover .project-image::before {
             left: 100%;
         }
 
