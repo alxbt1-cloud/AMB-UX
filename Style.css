@@ -568,6 +568,15 @@
             margin-bottom: 0.5rem;
         }
 
+        .stat-description {
+            color: #b0b0b0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
         .stat-label {
             color: #b0b0b0;
             text-align: center;
