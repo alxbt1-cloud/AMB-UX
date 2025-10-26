@@ -10,7 +10,7 @@
     <nav class="nav"> 
         <div class="logo"> <a href="#hero" onclick="handleNavClick(event, '#hero')">Alexander Beattie</a></div>
         <ul class="nav-links">
-            <li><a href="#work" onclick="handleNavClick(event, '#work')">Work</a></li>
+            <li><a href="#work" onclick="handleNavClick(event, '#work')">Products</a></li>
             <li><a href="#about" onclick="handleNavClick(event, '#about')">About</a></li>
         </ul>
     </nav>
@@ -25,7 +25,7 @@
     </section>
 
     <section id="work" class="section main-content">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title">Featured Products</h2>
         <div class="projects-grid">
             <div class="project-card-1" onclick="showProject('project1')">
                 <div class="project-image"><img src="image1.jpg" alt="Event Promotions Bottom Sheet"></div>
@@ -56,7 +56,7 @@
             <div class="project-card-2" onclick="showProject('project3')">
                 <div class="project-image"><img src="image3.jpg" alt="Event Promotions Bottom Sheet"></div>
                 <div class="project-info">
-                    <h3>Customer Information Update Flow</h3>
+                    <h3>Know Your Customer</h3>
                     <p>Streamlined KYC compliance process reducing completion time by 68%</p>
                     <div class="tags">
                         <span class="tag">Form Design</span>
@@ -103,7 +103,7 @@
 
         <div class="contact-section">
                 <h3 style="margin-top: 3rem; margin-bottom: 1rem; font-size: 1.8rem;">Let's Connect</h3>
-                <p style="margin-bottom: 1.5rem;">I'm always interested in hearing about new projects and opportunities</p>
+                <p style="margin-bottom: 1.5rem;">I'm always interested in hearing about new projects and opportunities, so lets chat!</p>
             <div class="contact-links" style="justify-content: flex-start;">
                 <a href="mailto:your.alxbt1@gmail.com" class="contact-link">
                         📧 Email
@@ -122,7 +122,7 @@
 
     <!-- Project Detail Pages -->
     <div id="project1" class="project-detail">
-            <a href="#work" class="cta-button" onclick="hideProject(event)">← Back to Projects</a>
+        <!-- Back button if required <a href="#work" class="back-button" onclick="hideProject(event)">← Back to Products</a>>// -->
         <div class="project-header">
             <h1>Event Promotions Bottom Sheet</h1>
             <div class="project-meta">
@@ -249,12 +249,12 @@
                     </div>   
                     <div class="stat-group">
                         <div class="ring-container">
-                            <div class="ring" style="--percentage: 198deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
-                            <div class="percentage">156%</div>
+                            <div class="ring" style="--percentage: 92deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">26%</div>
                         </div>
                         <div class="stat-description">
                             <h3>Engagement Increase</h3>
-                            <p>Overall promotional offer engagement increased by 156% in the first month after launch.</p>
+                            <p>Overall promotional offer engagement increased by 26% in the first month after launch.</p>
                         </div>
                     </div> 
                     <div class="stat-group">
@@ -277,7 +277,7 @@
     </div>
 
     <div id="project2" class="project-detail">
-            <a href="#work" class="cta-button" onclick="hideProject(event)">← Back to Projects</a>
+        <!-- Back button if required <a href="#work" class="back-button" onclick="hideProject(event)">← Back to Products</a>>// -->
         <div class="project-header">
             <h1>Merchandise Promotional Offers</h1>
             <div class="project-meta">
@@ -348,21 +348,21 @@
         <div class="project-content">
             <div class="project-section">
                 <h2>Research & Discovery</h2>
-                I conducted journey mapping workshops with 20 users to understand their betting flow mindsets, analyzed clickstream data across 200K+ user sessions, and ran preference tests with 300 customers on different promotional approaches. I also interviewed merchandising team to understand inventory and margin considerations. Research revealed distinct "high-focus" (pre-bet) vs "low-focus" (post-bet, browsing) moments in user journeys.</p>
+                I conducted journey mapping workshops with 20 users to understand their betting flow mindsets, analyzed clickstream data across 300K+ user sessions, and ran preference tests with 300 customers on different promotional approaches. I also interviewed merchandising team to understand inventory and margin considerations. Research revealed distinct "high-focus" (pre-bet) vs "low-focus" (post-bet, browsing) moments in user journeys.</p>
                 <div class="project-image-grid">
                     
                 <div class="outcome-stats">
                     <div class="stat-card">
-                        <div class="stat-number">13%</div>
-                        <div class="stat-label">Increase in merchandise revenue from betting users</div>
+                        <div class="stat-number">16 out of 20</div>
+                        <div class="stat-label">Customers said promotional offers effect who they bet with.</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">41% </div>
-                        <div class="stat-label">Click-through rate on post-bet promotions</div>
+                        <div class="stat-number">8 out of 20 </div>
+                        <div class="stat-label">Customers said they check for offers before placing a bet.</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">No Loss</div>
-                        <div class="stat-label">On betting conversion metrics</div>
+                        <div class="stat-number">63%</div>
+                        <div class="stat-label">Of customers clicked on promotional offers somewhere throughout their betting journey when it was available.</div>
                     </div>
                 </div>
                 </div>
@@ -394,12 +394,12 @@
                 <div class="project-image-grid">
                     <div class="stat-group">
                         <div class="ring-container">
-                            <div class="ring" style="--percentage: 284deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
-                            <div class="percentage">285%</div>
+                            <div class="ring" style="--percentage: 20deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">13%</div>
                         </div>
                         <div class="stat-description">
-                            <h3>Limit-Setting Adoption</h3>
-                            <p>285% increase in users proactively setting deposit, loss, or time limits within the first month.</p>
+                            <h3>Promotion Usage</h3>
+                            <p>13% Increase in merchandise revenue from betting users.</p>
                         </div>
                     </div>   
                     <div class="stat-group">
@@ -408,18 +408,18 @@
                             <div class="percentage">89%</div>
                         </div>
                         <div class="stat-description">
-                            <h3>Tool Helpfulness Rating</h3>
-                            <p>89% of users rated the responsible gaming tools as "helpful" or "very helpful" in managing their betting behavior.</p>
+                            <h3>Helpfulness Rating</h3>
+                            <p>89% of users rated the new merchandising as "helpful" or "very helpful" in helping them use promotional offers.</p>
                         </div>
                     </div> 
                     <div class="stat-group">
                         <div class="ring-container">
-                            <div class="ring" style="--percentage: 194deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
-                            <div class="percentage">54%</div>
+                            <div class="ring" style="--percentage: 12deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">8%</div>
                         </div>
                         <div class="stat-description">
                             <h3>Reduction in Overspending</h3>
-                            <p>54% reduction in users exceeding their self-set budgets compared to pre-dashboard baseline.</p>
+                            <p>8% Year on Year improvement in share of wallet for those classed as Highly Engaged.</p>
                         </div>
                     </div>
             </div>
@@ -432,9 +432,9 @@
     </div>
 
     <div id="project3" class="project-detail">
-            <a href="#work" class="cta-button" onclick="hideProject(event)">← Back to Projects</a>
+        <!-- Back button if required <a href="#work" class="back-button" onclick="hideProject(event)">← Back to Products</a>>// -->
         <div class="project-header">
-            <h1>Customer Information Update Flow</h1>
+            <h1>Know Your Customer</h1>
             <div class="project-meta">
                 <div class="project-meta-item">
                     <span class="project-meta-label">Role</span>
@@ -492,7 +492,7 @@
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">60%</div>
-                        <div class="stat-label">Of customers interviewed say they switch to other betting apps when their account is blocked</div>
+                        <div class="stat-label">Of customers interviewed say they switch to other betting apps when their account is blocked.</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">72%</div>
@@ -519,7 +519,7 @@
                         <li>Mobile-optimized camera integration for document capture</li>
                     </ul>
                 </div>
-                <div class="project-image-2"><img src="image1.jpg" alt="Event Promotions Bottom Sheet"></div>
+                <div class="project-image-2"><img src="image16.png" alt="KYC image"></div>
             </div>  
             
             <div class="project-section">
@@ -528,32 +528,32 @@
                 <div class="project-image-grid">
                     <div class="stat-group">
                         <div class="ring-container">
-                            <div class="ring" style="--percentage: 241deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
-                            <div class="percentage">67%</div>
+                            <div class="ring" style="--percentage: 313deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">87%</div>
                         </div>
                         <div class="stat-description">
-                            <h3>Multi-Leg Bet Increase</h3>
-                            <p>67% increase in multi-leg bet placements among all active users within 3 months of launch.</p>
+                            <h3>Trouble Free</h3>
+                            <p>87% of all customers where able to complete this task without contacting customer service.</p>
                         </div>
                     </div>   
                     <div class="stat-group">
                         <div class="ring-container">
-                            <div class="ring" style="--percentage: 256deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
-                            <div class="percentage">71%</div>
+                            <div class="ring" style="--percentage: 245deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">68%</div>
                         </div>
                         <div class="stat-description">
-                            <h3>Error Reduction</h3>
-                            <p>71% reduction in bet builder errors and incompatible selection attempts through smart validation.</p>
+                            <h3>First Round Success</h3>
+                            <p>68% of customers completed the task when prompted to do so within the first round of prompting.</p>
                         </div>
                     </div> 
                     <div class="stat-group">
                         <div class="ring-container">
-                            <div class="ring" style="--percentage: 166deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
-                            <div class="percentage">46%</div>
+                            <div class="ring" style="--percentage: 353deg; --color-start: #42A5F5; --color-end: #9C27B0;"></div>
+                            <div class="percentage">98%</div>
                         </div>
                         <div class="stat-description">
-                            <h3>First-Time User Success</h3>
-                            <p>46% of first-time bet builder users successfully placed a multi-leg bet, up from 12% previously.</p>
+                            <h3>Overall Success</h3>
+                            <p>98% of customers completed the task before their account was locked.</p>
                         </div>
                     </div>
             </div>
