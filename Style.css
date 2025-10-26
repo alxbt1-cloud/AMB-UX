@@ -75,7 +75,7 @@
             align-items: center;
             margin-bottom: 4rem;
             margin-top: 4rem;     
-         }
+        }
 
         .hero-overview-section .project-section {
             margin: 0;
@@ -466,13 +466,13 @@
             overflow: hidden;
         }
 
-         .project-hero-image img {
+        .project-hero-image img {
             width: 100%;
             height: auto;
             border-radius: 0 0 20px 20px;
             mask-image: -webkit-linear-gradient(#00000000 0%,  rgb(0, 0, 0) 40%);
             align-items: baseline
-         }
+        }
 
         .project-content {
             display: grid;
@@ -535,7 +535,7 @@
             box-shadow: #764ba26c 0px 0px 10px;    
         }
 
-         .project-image-2 img {
+        .project-image-2 img {
             display: flex;
             margin-left: auto;
             width: 80%;
