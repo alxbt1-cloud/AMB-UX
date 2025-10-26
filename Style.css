@@ -637,7 +637,7 @@
         @media (max-width: 768px) {
             .hero-overview-section {
         grid-template-columns: 1fr;  /* Stacks vertically on mobile */
-     }
+    }
             .nav-links {
                 gap: 1rem;
                 
