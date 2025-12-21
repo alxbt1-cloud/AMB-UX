@@ -362,6 +362,19 @@
             transform: translateY(-5px);
         }
 
+        .contact-link svg {
+            width: 20px;
+            height: 20px;
+            stroke: #667eea;
+            fill: none;
+            stroke-width: 2;
+            transition: stroke 0.3s;
+        }
+        
+        .contact-link:hover svg {
+            stroke: #ffffff;
+        }
+
         .back-to-top {
             position: fixed;
             bottom: 2rem;
