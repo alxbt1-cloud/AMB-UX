@@ -35,9 +35,12 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .logo :hover {
-            -webkit-text-fill-color: #ffffff36;
+        .logo a {
             text-decoration: none;
+        }
+
+        .logo a:hover {
+            text-decoration: underline;
         }
 
         .nav-links {
